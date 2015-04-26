@@ -47,10 +47,10 @@ cacheSolve <- function(x, ...) {
         }
         
         # If no value is cached, get any data that was previously present
-        data <- x$get()
+        data <- x$getMatrix()
         
         # Calculate the new inverse
-        I <- solve
+        I <- solve(data,...)
         
         # Cache the newly calculated value
         x$setInverse(I)
