@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
         # Sets in a new value for a matrix for which inverse is to be cached
         setMatrix <- function(y){
                 x <<- y
-                # flush the cache, as the matrix now has a new value
+                # Flush the cache, as the matrix now has a new value
                 Inv <<- NULL
         }
         
