@@ -55,5 +55,6 @@ cacheSolve <- function(x, ...) {
         # Cache the newly calculated value
         x$setInverse(I)
         
+        # Return the inverse of the matrix
         I
 }
