@@ -30,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
         getInverse <- function() Inv
         
         # Return a list of functions of the same name as their purpose
-        List(setMatrix = setMatrix, getMatrix = getMatrix, setInverse = setInverse, getInverse = getInverse)
+        list(setMatrix = setMatrix, getMatrix = getMatrix, setInverse = setInverse, getInverse = getInverse)
 }
 
 
